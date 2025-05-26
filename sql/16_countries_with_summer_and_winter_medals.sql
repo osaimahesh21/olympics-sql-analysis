@@ -1,0 +1,5 @@
+SELECT Team
+FROM dataset_olympics
+WHERE Medal IS NOT NULL
+GROUP BY Team
+HAVING COUNT(DISTINCT Season) = 2;
